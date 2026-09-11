@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> PAGINA TORNEO </title>
+    <style>
+        th { text-align: left; }
+    </style>
+</head>
+<body>
+<form>
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Nombre:</th>
+        <td><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3" maxlength="15"></td>
+    </tr>
+    <tr>
+        <th>Correo:</th>
+        <td><input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required></td>
+    </tr>
+    <tr>
+        <th>Edad:</th>
+        <td><input type="number" id="edad" name="edad" placeholder="12-40" min="12" max="40" required></td>
+    </tr>
+    <tr>
+        <th>Nickname:</th>
+        <td><input type="text" id="nickname" name="nickname" placeholder="Escribe tu nickname" required minlength="1" maxlength="15" 
+            required pattern="[A-Za-z0-9]+"></td>
+        
+        </td>
+
+    </tr>
+    <tr>
+        <th>Categoria:</th>
+        <td> <input type="radio" id="categoria1" name="categoria" value="principiante" required> <label for="categoria1">Novato</label> 
+            <input type="radio" id="categoria2" name="categoria" value="intermedio" required> <label for="categoria2">Intermedio</label> 
+            <input type="radio" id="categoria3" name="categoria" value="avanzado" required> <label for="categoria3">Avanzado</label> </td>
+    </tr>
+    <tr>
+        <th>Juegos favoritos:</th>
+        <td><input type="checkbox" id="juegos" name="juegos" value="juego1"> <label for="juegos">FIFA</label>
+             <input type="checkbox" id="juegos2" name="juegos" value="juego2"> <label for="juegos2">Fortnite</label> 
+             <input type="checkbox" id="juegos3" name="juegos" value="juego3"> <label for="juegos3">Minecraft</label> </td>
+    </tr>
+    <tr>
+        <th>Fecha de inscripción:</th>
+        <td><input type="date" id="fecha" name="fecha" required min="2025-01-01" max="2025-12-31"></td>
+    </tr>
+    <tr>
+        
+        <td colspan="2" align="center">
+
+            <input type="submit" value="Inscribirse">
+            <input type="reset" value="Restablecer">
+    </td>
+        
+    </tr>
+
+
+
+</table>
+</form>
+</body>
+</html>
